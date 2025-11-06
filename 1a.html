@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Days using Switch</title>
+</head>
+<body>
+    <h2>Display Week Day</h2>
+    <p id="result"></p>
+
+    <script>
+        let day = new Date().getDay(); // 0 = Sunday, 1 = Monday, ...
+        let dayName;
+
+        switch(day) {
+            case 0:
+                dayName = "Sunday";
+                break;
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            default:
+                dayName = "Invalid Day";
+        }
+
+        document.getElementById("result").innerHTML = "Today is: " + dayName;
+    </script>
+</body>
+</html>
